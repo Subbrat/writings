@@ -22,12 +22,4 @@
             document.getElementById('line2').innerHTML = lnwr2[randomLine];
         }();
     }
-
-
-
-
-
-
-
-
 }

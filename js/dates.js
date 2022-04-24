@@ -1,4 +1,3 @@
-
 {
     const date1 = new Date('3/19/2022'); //month date year
     const date2 = new Date();
@@ -8,7 +7,6 @@
     console.log(diffDays + " days");
     document.getElementById('dateago1').innerHTML = diffDays - 1 + " days ago";
 }
-
 
 {
     const date11 = new Date('3/23/2022'); //month date year
