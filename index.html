@@ -9,50 +9,34 @@
         content="width=device-width,height=device-height, initial-scale=1, maximum-scale=1, user-scalable=0">
     <link href="./../el/fa/css/all.css" link rel="stylesheet">
     <link rel="stylesheet" href="./../el/css/s6css.css">
+    <link rel="stylesheet" href="./../el/css/anim.css">
     <link rel="stylesheet" href="./../el/css/ga.css">
     <link rel="stylesheet" href="./css/css.css">
 </head>
 
-<body id="body" class="s6-black s6-text-orange" onmousedown="return false" onselectstart="return false"
-    onload="toggleorder();">
-    <div class=" s6-padding-right-large line s6-black s6-text-orange header">
-        <a class="s6-black s6-text-orange s6-round-xlarge " href="https://subbrat.github.io/teasepage/"
-            style=" text-decoration:none" id="head" target="_blank">Subbrat's landing page for writings. </a>
-        <div class="">
-            <button class="s6-black s6-text-orange s6-round-large line" id="butt" onclick="toggleorder()">Toggle
-                order</button>
-        </div>
+<body id="body" class="s6-black s6-text-orange" onselectstart="return false" onload="toggleorder();">
+    <div class="s6-black s6-text-orange header">
+        <a class="s6-black s6-text-orange s6-round-xlarge" href="https://subbrat.github.io/teasepage/"
+            style="text-decoration:none" id="head" target="_blank">Subbrat's landing page for
+            writings. </a>
+        <div class="s6-button s6-hide-small s6-black s6-text-orange s6-round line lbut s6-hover-orange"
+            onclick="toggleorder()">
+            Toggle
+            order</div>
     </div>
-    <div id="sorting" class="s6-text-orange centre full-height s6-content s6-black s6-padding-large"
-        style="min-width:97%;">
+    </div>
+    <div id="sorting" class="centre full-height s6-container s6-black" style="min-width:100%;">
         <li id="li">
             <p hidden>1</p>
             <div>
                 <div class="s6-black s6-text-orange s6-round-large s6-container line">
                     <p id="writhead">The first letter..</p>
+                    <p id="line1"></p>
                     <p id="dateago1"></p>
-                    <p id="line1" class="line s6-round-large"></p>
-                    <a href="./wr/writing1.html"><i class="fa fa-eye s6-large"></i></i></a>
-
                 </div>
                 <hr>
             </div>
         </li>
-
-        <li id="li">
-            <p hidden>1</p>
-            <div>
-                <div class="s6-black s6-text-orange s6-round-large s6-container line">
-                    <p id="writhead">try clicking that button on right top</p>
-                    <p id="dateago"></p>
-                    <p id="line2" class="line s6-round-large"></p>
-                    <a href="#"><i class="fa fa-eye s6-large"></i></i></a>
-
-                </div>
-                <hr>
-            </div>
-        </li>
-
     </div>
     <div class="s6-footer line s6-hide-small">
         <div class="s6-padding">
