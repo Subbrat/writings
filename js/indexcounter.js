@@ -25,7 +25,6 @@
         }
 }
 
-
 { // writingtwo
         const E2 = document.getElementById('wr02');
         updateVisitCount();

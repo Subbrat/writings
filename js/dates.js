@@ -5,7 +5,7 @@
     const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
     console.log(diffTime + " milliseconds");
     console.log(diffDays + " days");
-    document.getElementById('dateago1').innerHTML = diffDays - 1 + " days ago";
+    document.getElementById('dt1').innerHTML = diffDays - 1 + " days ago";
 }
 
 {
@@ -15,5 +15,5 @@
     const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
     console.log(diffTime + " milliseconds");
     console.log(diffDays + " days");
-    document.getElementById('dateago2').innerHTML = diffDays - 1 + " days ago";
+    document.getElementById('dt2').innerHTML = diffDays - 1 + " days ago";
 }

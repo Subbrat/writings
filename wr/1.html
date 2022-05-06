@@ -18,7 +18,7 @@
       <h1><b>Wanted to say something..</b></h1>
     </header>
     <div class="s6-container s6-black s6-padding-large">
-      <h3 class="s6-text-orange"><b>The first letter...</b></h3>
+      <h3 class="s6-text-orange"><b>The First Letter...</b></h3>
     </div>
     <div class="s6-container">
       <div>Ay boy,<br>Enough.
@@ -53,20 +53,32 @@
         the world behind us forever.
         <br><br>
         <p>Subbrat<br>March 19, 2022</p>
-        <p id="dateago1"></p>
-        <p id="wr1counter"></p>
+        <p id="dt1"></p>
 
       </div>
 
     </div>
-    <p hidden id="wr01">o</p>
+    <p hidden id="el">o</p>
+    <p id="l1" class="s6-center s6-text-grey"></p>
   </div>
   <script>
     document.oncontextmenu = new Function("return false");
   </script>
+  <script>
+    const countE0 = document.getElementById('el');
+    updateVisitCount();
+
+    function updateVisitCount() {
+      fetch('https://api.countapi.xyz/update/subbrat/writingone/?amount=+1')
+        .then(res => res.json())
+        .then(res => {
+          countE0.innerHTML = res.value;
+        })
+    }
+  </script>
   <script src="./../js/dates.js"></script>
-  <script src="./../js/js.js"> </script>
-  <script src="./../js/counter.js"></script>
+  <script src="./../js/randomlines.js"></script>
+  <script src="./../js/js.js"></script>
 </body>
 
 </html>

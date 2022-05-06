@@ -26,19 +26,29 @@
                 <br><br>
                 <p>Subbrat<br>MONTH DD, YYYY</p>
                 <p id="dateagoX"></p>
-                <p id="wrXcounter"></p>
-
             </div>
 
         </div>
-        <p hidden id="wrNN"></p>
+        <p hidden id="el"></p>
+        <p id="l2" class="s6-center s6-text-grey"></p>
     </div>
     <script>
         document.oncontextmenu = new Function("return false");
     </script>
+    <script>
+        const countE0 = document.getElementById('el');
+        updateVisitCount();
+
+        function updateVisitCount() {
+            fetch('https://api.countapi.xyz/update/subbrat/api/?amount=+1')
+                .then(res => res.json())
+                .then(res => {
+                    countE0.innerHTML = res.value;
+                })
+        }
+    </script>
     <script src="./../js/js.js"> </script>
     <script src="./../js/dates.js"></script>
-    <script src="./../js/counter.js"></script>
 </body>
 
 </html>
